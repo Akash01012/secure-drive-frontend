@@ -5,7 +5,7 @@ export default function Sidebar({ folders, active, onSelect }) {
 
       <div className="space-y-1">
 
-        {/* 🔒 DEFAULT / ROOT FOLDER (ALWAYS ON TOP) */}
+        {/*  DEFAULT / ROOT FOLDER (ALWAYS ON TOP) */}
         <button
           onClick={() => onSelect(null)}
           className={`w-full text-left px-3 py-2 rounded-lg text-sm transition

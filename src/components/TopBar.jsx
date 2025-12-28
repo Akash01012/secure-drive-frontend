@@ -13,7 +13,7 @@ export default function TopBar({
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState("");
 
-  // 🔑 this is the IMPORTANT part
+  //  this is the IMPORTANT part
   const [fileInputKey, setFileInputKey] = useState(Date.now());
 
   // when file dropped into grid
@@ -44,13 +44,13 @@ export default function TopBar({
 
       await uploadFile(fd);
 
-      // ✅ RESET FORM COMPLETELY
+      //  RESET FORM COMPLETELY
       setOwner("");
       setEmail("");
       setFile(null);
       setOneTime(false);
 
-      // 🔥 RESET FILE INPUT so SAME file can be selected again
+      //  RESET FILE INPUT so SAME file can be selected again
       setFileInputKey(Date.now());
 
       onUploadSuccess(owner);
